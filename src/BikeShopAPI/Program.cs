@@ -26,13 +26,13 @@ namespace BikeShopAPI
                         HealthCheckResult.Unhealthy("There is a system failure with the application, which requires immediate attention.");
                 }
 
-                bool CheckPerformance()
-                {
-                    Random random = new Random();
-                    int randomNumber = random.Next(1, 50);
+  bool CheckPerformance()
+{
+    Random random = new Random();
+    int randomNumber = random.Next(1, 50);
 
-                    return randomNumber > 5;
-                }
+    return randomNumber > 30;
+}
 
                 bool CheckIfMinorIssue()
                 {
